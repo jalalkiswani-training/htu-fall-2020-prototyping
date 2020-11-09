@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<style>
+    #header{
+        background-color: #ccc;
+        color: white;
+        width:100%;
+        padding: 5px 0px 5px 0px;        
+    }
+    #top-actions{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 90%;
+    }
+    #top-actions button{
+        border-radius: 5px;
+        padding: 5px;
+        width: 50px;
+    }
+    #center-message{
+        font-size: 2em;
+        margin-top: 50px;
+    }
+    #progress{
+        width: 80%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: darkblue;
+        margin-bottom: 10px;
+    }
+    #bottom-actions{
+        margin-top: 190px;
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="container-body">
+        <div id="header">
+            Connecting to Device
+        </div>
+        <div id="top-actions">
+            <button>Exit</button>
+        </div>
+        <div id="center-message">
+            Connecting...
+        </div>
+        <div id="progress">
+            
+        </div>
+        <div id="bottom-actions">
+            <button>Cancel</button>
+        </div>
+    </div>
+    </div>
+    <script>
+        setTimeout(function () {
+           window.location.href = "home.html"; //will redirect to your blog page (an ex: blog.html)
+        }, 3000); //will call the function after 2 secs.
+        
+        </script>    
+</body>
+</html>
